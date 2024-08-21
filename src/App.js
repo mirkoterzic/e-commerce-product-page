@@ -101,6 +101,8 @@ function App() {
   const [slideIndex, setSlideIndex] = useState(1);
   const [showLightbox, setShowLightbox] = useState(false);
 
+  const { mainImage } = products[value];
+
   const nextSlide = () => {
     if (slideIndex !== products.length) {
       setSlideIndex(slideIndex + 1);
@@ -134,7 +136,7 @@ function App() {
       )}
       <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:place-items-center lg:py-20 ">
         <article>
-          <div>
+          <div className="lg:hidden">
             {products.map((item, index) => (
               <div
                 key={item.id}
@@ -166,6 +168,14 @@ function App() {
                 </ul>
               </div>
             ))}
+          </div>
+          <div className="hidden lg:block">
+            <img
+              src={mainImage}
+              alt=""
+              className="w-full lg:rounded-2xl cursor-pointer"
+              onClick={() => setShowLightbox(true)}
+            />
           </div>
 
           <ul className="hidden lg:flex items-center justify-start gap-5 flex-wrap mt-5">
