@@ -11,3 +11,8 @@ ul {
 body {
   font-family: "Kumbh Sans", sans-serif;
 }
+@media (min-width: 1024px) {
+  .big-image {
+    height: 900px;
+  }
+}
