@@ -38,7 +38,6 @@ To run this project locally, follow these steps:
    ```bash
    npm start
 
-
   **Your application will be available at [http://localhost:3000](http://localhost:3000)**
 
   ## Scripts
