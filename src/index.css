@@ -28,14 +28,12 @@ nav.open {
 }
 nav ul {
   padding-top: 60px;
-  @apply flex items-center flex-col gap-4 lg:flex-row;
+  @apply flex  flex-col gap-4 lg:flex-row;
 }
 nav ul li {
   @apply font-bold text-lg cursor-pointer lg:font-normal lg:text-base hover:text-orange-400 transition-all duration-500 ease-in-out;
 }
 .close {
-  transition: all 0.3s ease-in-out;
-
   z-index: 999;
   @apply absolute top-8 left-8;
 }
