@@ -4,7 +4,6 @@ import { data } from "./data";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import minus from "./images/icon-minus.svg";
 import plus from "./images/icon-plus.svg";
-
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Header from "./components/Header";
 import Lightbox from "./components/Lightbox";
