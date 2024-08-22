@@ -17,7 +17,7 @@ export default function Header() {
 
   const handleMenuClick = () => {
     setIsOpen(true);
-    setIsTransitionComplete(false); // Reset the state when opening the menu
+    setIsTransitionComplete(false);
   };
 
   return (
